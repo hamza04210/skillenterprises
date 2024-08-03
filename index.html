@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Silk Enterprises</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #ff6f61, #ffcccb);
+            padding: 60px 20px;
+            text-align: center;
+            color: white;
+            position: relative;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 4em;
+            animation: fadeInDown 2s ease-in;
+        }
+
+        .header p {
+            font-size: 1.5em;
+            margin: 20px 0 0;
+            animation: fadeInUp 2s ease-in;
+        }
+
+        .categories, .testimonials, .social-media, .meeting-link {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .categories h2, .testimonials h2, .social-media h2 {
+            font-size: 2.5em;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .categories h2::after, .testimonials h2::after, .social-media h2::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: #ff6f61;
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        .category, .testimonial {
+            background: #fff;
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            max-width: 800px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .category:hover, .testimonial:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+        }
+
+        .social-media a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #ff6f61;
+            font-size: 1.5em;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        .social-media a:hover {
+            color: #333;
+            transform: scale(1.2);
+        }
+
+        .meeting-link a {
+            text-decoration: none;
+            background: #ff6f61;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            transition: background 0.3s, transform 0.3s;
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        .meeting-link a:hover {
+            background: #ff3b2f;
+            transform: translateY(-5px);
+        }
+
+        .footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Silk Enterprises</h1>
+        <p>The Smoothest Tissue Experience</p>
+    </div>
+
+    <div class="categories">
+        <h2>Our Tissue Categories</h2>
+        <div class="category">
+            <h3>Facial Tissues</h3>
+            <p>Soft and gentle on your skin, our facial tissues provide comfort and care.</p>
+        </div>
+        <div class="category">
+            <h3>Paper Towels</h3>
+            <p>Strong and absorbent, perfect for any cleaning task.</p>
+        </div>
+        <div class="category">
+            <h3>Toilet Tissues</h3>
+            <p>Luxuriously soft and reliable for everyday use.</p>
+        </div>
+    </div>
+
+    <div class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">
+            <p>"Silk Enterprises tissues are the best! They are incredibly soft and durable. I wouldn't use any other brand!"</p>
+            <p><strong>- Jane Doe</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"The quality of their tissues is unmatched. Perfect for my sensitive skin!"</p>
+            <p><strong>- John Smith</strong></p>
+        </div>
+        <div class="testimonial">
+            <p>"I love the range of products they offer. There's a perfect tissue for every need!"</p>
+            <p><strong>- Emily Johnson</strong></p>
+        </div>
+    </div>
+
+    <div class="social-media">
+        <h2>Connect with Us</h2>
+        <a href="https://facebook.com/silkenterprises" target="_blank">Facebook</a>
+        <a href="https://twitter.com/silkenterprises" target="_blank">Twitter</a>
+        <a href="https://instagram.com/silkenterprises" target="_blank">Instagram</a>
+    </div>
+
+    <div class="meeting-link">
+        <a href="https://meetinglink.com" target="_blank">Schedule a Meeting</a>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2024 Silk Enterprises. All rights reserved.</p>
+    </div>
+</body>
+</html>
